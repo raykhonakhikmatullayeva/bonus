@@ -13,7 +13,7 @@ func main() {
 	fmt.Scan(&amount)
 	fmt.Println("Alif card? (1-yes/0-no): ")
 	fmt.Scan(&alifChoice)
-	isAlifCard := (alifChoice == 0)
+	isAlifCard := (alifChoice == 1)
 	amountInt := int(amount)
 	if !commission.IsValidAmount(amountInt) {
 		fmt.Println("Amount must be between 500 and 15 000 000!")
@@ -25,7 +25,7 @@ func main() {
 	} else {
 		commission1 = commission.Commission(amountInt)
 	}
-	fmt.Printf("=====================Reciept========================\n")
+	fmt.Printf("=============================================\n")
 	fmt.Printf("Service: %s\n", name)
 	fmt.Printf("Amount(min500 - max15 000 000): %d\n", amountInt)
 	fmt.Printf("Commission: %d\n", commission1)
