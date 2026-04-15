@@ -1,5 +1,11 @@
 package commission
 
-func Calculate(sales, rate float64) float64 {
-	return sales * rate
+const CommissionRate = 29
+const Percentage = 100
+
+func Commission(amountInt int) int {
+	if IsValidAmount(amountInt) {
+		return amountInt * CommissionRate / Percentage / Percentage
+	}
+	return 0
 }
