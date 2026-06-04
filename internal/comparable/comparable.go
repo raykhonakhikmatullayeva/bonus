@@ -12,10 +12,10 @@ func FindDuplicates[T comparable](xs []T) []T {
 	return result
 }
 func CountOccurrences[T comparable](xs []T) map[T]int {
-	var result map[T]int
-	result = make(map[T]int)
+	var count map[T]int
+	count = make(map[T]int)
 	for _, x := range xs {
-		result[x]++
+		count[x]++
 	}
-	return result
+	return count
 }
