@@ -11,5 +11,11 @@ func main() {
 
 	fmt.Println("Duplicates: ", a)
 	fmt.Println("Counts: ", b)
-
+	books := []comparable2.Book{
+		{"Go in Action", 4.2},
+		{"The Go Programming Language", 4.8},
+		{"Learning Go", 4.5},
+	}
+	c := comparable2.TopBooks(books, 2)
+	fmt.Printf("Top Books: %v\n", c)
 }
