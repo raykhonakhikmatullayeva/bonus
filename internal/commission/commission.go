@@ -5,6 +5,7 @@ const Percentage = 100
 
 func Commission(amountInt int) int {
 	if IsValidAmount(amountInt) {
+
 		return amountInt * CommissionRate / Percentage / Percentage
 	}
 	return 0
